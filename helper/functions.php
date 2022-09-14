@@ -712,3 +712,24 @@ function widget_attributes(){
 
     return $attr;
 }
+
+/*
+ * Popup guard, check where to show the popup.
+ *
+ * @param string|page ID to check.
+ * @return bolian
+ */
+function guard( $page = '' )
+{
+    $excluded_single = get_option( 'excludedSingle' );
+
+    if( $excluded_single ){
+        foreach( $excluded_single as $single_post ) {
+            if( is_singular( $single_post['id'] ) ){
+                return false;
+            }
+        }
+    }
+    return true;
+    
+}

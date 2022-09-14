@@ -81,7 +81,7 @@ class Admin_Asset extends Enqueuer {
                 'oneTap_CoreScriptData' => [
                     'apiEndpoint' => rest_url( 'exlac_cs/v1' ),
                     'apiNonce'    => wp_create_nonce( 'wp_rest' ),
-                    'wp_pages'    => Helper\get_wp_pages(),
+                    'wp_pages'    => [],
                 ],
             ],
         ];
