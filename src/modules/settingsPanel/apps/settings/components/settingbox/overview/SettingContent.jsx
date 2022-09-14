@@ -126,6 +126,7 @@ const SettingContent = props => {
                     label: "Google clint ID",
                     component: <div className="exlac-vm-form-group">
                         <input type="text" name="clintID" className="exlac-vm-form__element" id="exlac-vm-chat-btn-text" value={clintID} onChange={handleclintID} />
+                        <span className="exlac-vm-setting-has-info__text">Find your clint ID for <a className="exlac-vm-setting-info" target="_blank" href="https://developers.google.com/identity/gsi/web/guides/get-google-api-clientid"><span className="exlac-vm-setting-has-info__text">FREE</span></a>. Follow the <a className="exlac-vm-setting-info" target="_blank" href="https://youtu.be/qS4dY7syQwA?t=471"><span className="exlac-vm-setting-has-info__text">Tutorial</span></a></span>
                     </div>
                 },
                 {

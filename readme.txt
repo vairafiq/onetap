@@ -25,7 +25,24 @@ Let's check out the industry players, they all are using Google One Tap Sign In.
 👉 **[Booking.com](https://www.booking.com/)**
 👉 **[trivago](https://www.trivago.com/)**
 
-This embedded UX allows an end user to sign-in directly when a Google iframe is embedded into your web pages. The Automatic sign-in option enables frictionless user sign-in
+This embedded UX allows an end user to sign-in directly when a Google iframe is embedded into your web pages. The Automatic sign-in option enables frictionless user sign-in.
+
+== Features ==
+
+🔥 Instant login popup
+🔥 Login button in login pages
+🔥 Shortcode to show login button
+🔥 Exclude in single post(any custom post type)
+🔥 Exclude in pages*
+🔥 Default user role*
+🔥 Auto signin
+🔥 Redirect URL*
+🔥 Signin context*
+🔥 Toggle outside tap to close One Tap
+🔥 Add multiside support*
+🔥 Delay to show popup*
+
+>*Requires Additional Purchase
 
 == Changelog ==
 

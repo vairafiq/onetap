@@ -5896,16 +5896,35 @@ var SettingContent = function SettingContent(props) {
     key: "general",
     content: [{
       label: "Google clint ID",
-      component: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("div", {
+      component: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
         className: "exlac-vm-form-group",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("input", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("input", {
           type: "text",
           name: "clintID",
           className: "exlac-vm-form__element",
           id: "exlac-vm-chat-btn-text",
           value: clintID,
           onChange: handleclintID
-        })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("span", {
+          className: "exlac-vm-setting-has-info__text",
+          children: ["Find your clint ID for ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("a", {
+            className: "exlac-vm-setting-info",
+            target: "_blank",
+            href: "https://developers.google.com/identity/gsi/web/guides/get-google-api-clientid",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("span", {
+              className: "exlac-vm-setting-has-info__text",
+              children: "FREE"
+            })
+          }), ". Follow the ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("a", {
+            className: "exlac-vm-setting-info",
+            target: "_blank",
+            href: "https://youtu.be/qS4dY7syQwA?t=471",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("span", {
+              className: "exlac-vm-setting-has-info__text",
+              children: "Tutorial"
+            })
+          })]
+        })]
       })
     }, {
       label: "Show in native login page",
