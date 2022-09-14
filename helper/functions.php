@@ -525,59 +525,6 @@ function get_formatted_time( $time, $timezone ) {
 }
 
 /**
- * Get WP Pages
- *
- * @return array Pages
- */
-function get_wp_pages() {
-	$query = new WP_Query([
-		'post_type'     => 'page',
-		'post_status'   => 'publish',
-		'post_per_page' => -1,
-		'fields'        => 'ids',
-	]);
-
-	if ( ! $query->have_posts() ) {
-		return [];
-	}
-
-	$pages = [];
-
-	foreach( $query->posts as $id ) {
-		$pages[] = [
-			'id'    => $id,
-			'title' => get_the_title( $id ),
-		];
-	}
-
-	return $pages;
-}
-
-/**
- * Get WP Roles
- *
- * @return array Roles
- */
-function get_wp_roles() {
-	$roles = get_editable_roles();
-
-	if ( ! $roles ) {
-		return [];
-	}
-
-	$all_roles = [];
-
-	foreach( $roles as $key => $role ) {
-		$all_roles[] = [
-			'id'    => $key,
-			'title' => $role['name'],
-		];
-	}
-
-	return $all_roles;
-}
-
-/**
  * Get WP Post Types
  *
  * @return array Post Types
@@ -750,37 +697,6 @@ function onetap_clean($var)
     } else {
         return is_scalar($var) ? sanitize_text_field($var) : $var;
     }
-}
-
-/*
- * Popup guard, check where to show the popup.
- *
- * @param string|page ID to check.
- * @return bolian
- */
-function guard( $page = '' )
-{
-    $excluded_pages  = get_option( 'excludedPages' );
-    $excluded_single = get_option( 'excludedSingle' );
-
-    if( $excluded_single ){
-        foreach( $excluded_single as $single_post ) {
-            if( is_singular( $single_post['id'] ) ){
-                return false;
-            }
-        }
-    }
-
-    if( $excluded_pages ){
-        foreach( $excluded_pages as $page ) {
-            if( is_page() && get_queried_object_id() === $page['id'] ){
-                return false;
-            }
-        }
-    }
-
-    return true;
-    
 }
 
 function widget_attributes(){
