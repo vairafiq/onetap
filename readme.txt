@@ -1,4 +1,4 @@
-=== oneTap - One Tab Google Sign In ===
+=== oneTap - Easy Google Sign In Prompt ===
 Contributors: exlac
 Donate link: https://exlac.com/
 Tags: google, login, signup, social login, one tab
@@ -12,7 +12,7 @@ oneTap - One Tab Google Sign In plugin allows you to get more user for your shop
 
 == Description ==
 
-👉 **[Plugin Demo](https://exlac.com/) | [Documentation](https://exlac.com/documentation/)** 👈
+👉 **[Plugin Demo](https://exlac.com/) | [Documentation](https://exlac.com/documentation/) | [Documentation](https://exlac.com/documentation/) | [Pro Version](https://exlac.com/products/onetap)** 👈
 
 Get 77% more conversion using Google One Tap Sign In! Yes, research shows people feel more comfortable using their social login rather than a login form. oneTap allows users to login by pushing One Tap Login popup at the top-right corner of your website. Which minimizes user steps to get in.
 
@@ -39,7 +39,7 @@ This embedded UX allows an end user to sign-in directly when a Google iframe is 
 🔥 Redirect URL*
 🔥 Signin context*
 🔥 Toggle outside tap to close One Tap
-🔥 Add multiside support*
+🔥 Add multisite support*
 🔥 Delay to show popup*
 
 >*Requires Additional Purchase
