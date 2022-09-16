@@ -8,11 +8,11 @@ Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-oneTap - One Tab Google Sign In plugin allows you to get more user for your shop, directory, megagine, portal and booking site. Very simple and lighwaight plugin which deal smartly with Google Auth API.
+oneTap - One Tab Google Sign In plugin allows you to get more users for your shop, directory, magazine, portal, and booking site. Very simple and lightweight plugin which deals smartly with Google Auth API.
 
 == Description ==
 
-👉 **[Plugin Demo](https://exlac.com/) | [Documentation](https://exlac.com/documentation/) | [Documentation](https://exlac.com/documentation/) | [Pro Version](https://exlac.com/products/onetap)** 👈
+👉 **[Plugin Demo](https://exlac.com/) | [Documentation](https://exlac.com/docs/configuring-google-clint-id/) | [Pro Version](https://exlac.com/products/onetap)** 👈
 
 Get 77% more conversion using Google One Tap Sign In! Yes, research shows people feel more comfortable using their social login rather than a login form. oneTap allows users to login by pushing One Tap Login popup at the top-right corner of your website. Which minimizes user steps to get in.
 
@@ -32,15 +32,15 @@ This embedded UX allows an end user to sign-in directly when a Google iframe is 
 🔥 Instant login popup
 🔥 Login button in login pages
 🔥 Shortcode to show login button
-🔥 Exclude in single post(any custom post type)
+🔥 Exclude in a single post(any custom post type)
 🔥 Exclude in pages*
 🔥 Default user role*
 🔥 Auto signin
 🔥 Redirect URL*
 🔥 Signin context*
 🔥 Toggle outside tap to close One Tap
-🔥 Add multisite support*
-🔥 Delay to show popup*
+🔥 Add sub-domain support*
+🔥 Delay showing popup*
 
 >*Requires Additional Purchase
 
