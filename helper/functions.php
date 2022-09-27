@@ -704,7 +704,7 @@ function widget_attributes(){
 	$current_url = home_url( add_query_arg( array(), $wp->request ) );
 	$login_uri   = home_url().'/?onetap-signin';
     $attr = [
-        'auto_select'   => get_option( 'autoSignIn', false ) ? true : false,
+        'auto_select'   => get_option( 'autoSignIn', true ) ? true : false,
         'redirect_uri'  => $current_url,
         'cancel_on_tap_outside' => get_option( 'cancelOnTapOutside', false ) ? true : false,
         'login_uri' => $login_uri,
