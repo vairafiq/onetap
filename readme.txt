@@ -12,7 +12,7 @@ oneTap - One Tab Google Sign In plugin allows you to get more users for your sho
 
 == Description ==
 
-**👁️[Plugin Demo](https://exlac.com/) | 🚀[Pro Version](https://exlac.com/products/onetap) | 👨‍🦯[Docs](https://exlac.com/docs/configuring-google-clint-id/) | 👩🏼‍💻[Support](https://exlac.com/products/onetap)**
+**👁️[Plugin Demo](https://exlac.com/) | 🚀[Pro Version](https://exlac.com/products/onetap) | 👨‍🦯[Docs](https://exlac.com/docs/configuring-google-clint-id/) | 👩🏼‍💻[Support](https://exlac.com/contact-us/)**
 
 Get 77% more conversion using Google One Tap Sign In! Yes, research shows people feel more comfortable using their social login rather than a login form. oneTap allows users to login by pushing One Tap Login popup at the top-right corner of your website. Which minimizes user steps to get in.
 
