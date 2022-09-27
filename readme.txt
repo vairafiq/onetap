@@ -4,7 +4,7 @@ Donate link: https://exlac.com/
 Tags: google, login, signup, social login, one tab
 Requires at least: 5.0 
 Tested up to:  6.0
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,9 +12,11 @@ oneTap - One Tab Google Sign In plugin allows you to get more users for your sho
 
 == Description ==
 
-👉 **[Plugin Demo](https://exlac.com/) | [Documentation](https://exlac.com/docs/configuring-google-clint-id/) | [Pro Version](https://exlac.com/products/onetap)** 👈
+**👁️[Plugin Demo](https://exlac.com/) | 🚀[Pro Version](https://exlac.com/products/onetap) | 👨‍🦯[Docs](https://exlac.com/docs/configuring-google-clint-id/) | 👩🏼‍💻[Support](https://exlac.com/products/onetap)**
 
 Get 77% more conversion using Google One Tap Sign In! Yes, research shows people feel more comfortable using their social login rather than a login form. oneTap allows users to login by pushing One Tap Login popup at the top-right corner of your website. Which minimizes user steps to get in.
+
+[youtube https://www.youtube.com/watch?v=gO4-5gk5MYA]
 
 == Why Google One Tap ==
 
@@ -24,6 +26,7 @@ Let's check out the industry players, they all are using Google One Tap Sign In.
 👉 **[Yelp](https://www.yelp.com/)**
 👉 **[Booking.com](https://www.booking.com/)**
 👉 **[trivago](https://www.trivago.com/)**
+👉 **[Medium](https://www.medium.com/)**
 
 This embedded UX allows an end user to sign-in directly when a Google iframe is embedded into your web pages. The Automatic sign-in option enables frictionless user sign-in.
 
@@ -45,6 +48,10 @@ This embedded UX allows an end user to sign-in directly when a Google iframe is 
 >*Requires Additional Purchase
 
 == Changelog ==
+
+= 1.0.1 =
+
+* Fix - Console error
 
 = 1.0.0 =
 
