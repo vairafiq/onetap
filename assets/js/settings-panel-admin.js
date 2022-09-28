@@ -6049,7 +6049,7 @@ var SettingContent = function SettingContent(props) {
         })
       })
     }, {
-      label: "Add multiside support",
+      label: "Add sub-domain support",
       pro: true,
       component: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
         className: "exlac-vm-form-group",
@@ -6064,7 +6064,7 @@ var SettingContent = function SettingContent(props) {
           className: "exlac-vm-setting-has-info__text",
           children: ["Use your parent domain like ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("code", {
             children: "parent-domain.com"
-          }), ", Keep blank if you have single site installation."]
+          }), ", Keep blank if you haven't sub-domain installation."]
         })]
       })
     }, {

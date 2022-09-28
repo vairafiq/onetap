@@ -176,11 +176,11 @@ const SettingContent = props => {
                     </div>
                 },
                 {
-                    label: "Add multiside support",
+                    label: "Add sub-domain support",
                     pro: true,
                     component: <div className="exlac-vm-form-group">
                         <input type="text" name="parentDomain" className="exlac-vm-form__element" id="exlac-vm-chat-btn-text" value={parentDomain} onChange={handleParentDomain} />
-                        <span className="exlac-vm-setting-has-info__text">Use your parent domain like <code>parent-domain.com</code>, Keep blank if you have single site installation.</span>
+                        <span className="exlac-vm-setting-has-info__text">Use your parent domain like <code>parent-domain.com</code>, Keep blank if you haven't sub-domain installation.</span>
                     </div>
                 },
                 {
