@@ -51,6 +51,7 @@ This embedded UX allows an end user to sign-in directly when a Google iframe is 
 
 = 1.0.2 =
 
+* New - Option to controle data updating on sign in
 * Fix - User data updating on sign in
 
 = 1.0.1 =

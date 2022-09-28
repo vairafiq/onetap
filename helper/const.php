@@ -17,7 +17,7 @@ if ( ! defined( 'ONETAP_REST_BASE_PREFIX' ) ) {
 }
 
 if ( ! defined( 'ONETAP_IN_DEVELOPMENT' ) ) {
-    define( 'ONETAP_IN_DEVELOPMENT', true );
+    define( 'ONETAP_IN_DEVELOPMENT', false );
 }
 
 if ( ! defined( 'ONETAP_SCRIPT_VERSION' ) ) {

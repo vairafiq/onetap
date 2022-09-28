@@ -5459,7 +5459,8 @@ var SettingBox = function SettingBox() {
     context: 'signin',
     cancelOnTapOutside: false,
     parentDomain: '',
-    delay: ''
+    delay: '',
+    pdateExistingUser: false
   }),
       _useState2 = _slicedToArray(_useState, 2),
       optionState = _useState2[0],
@@ -5774,7 +5775,8 @@ var SettingContent = function SettingContent(props) {
       context = optionState.context,
       cancelOnTapOutside = optionState.cancelOnTapOutside,
       parentDomain = optionState.parentDomain,
-      delay = optionState.delay;
+      delay = optionState.delay,
+      updateExistingUser = optionState.updateExistingUser;
   var dispatch = (0,react_redux__WEBPACK_IMPORTED_MODULE_1__.useDispatch)();
 
   var fetchOptions = /*#__PURE__*/function () {
@@ -5819,7 +5821,8 @@ var SettingContent = function SettingContent(props) {
       context: typeof options['context'] !== 'undefined' ? options['context'] : 'signin',
       cancelOnTapOutside: typeof options['cancelOnTapOutside'] !== 'undefined' ? options['cancelOnTapOutside'] : false,
       parentDomain: typeof options['parentDomain'] !== 'undefined' ? options['parentDomain'] : '',
-      delay: typeof options['delay'] !== 'undefined' ? options['delay'] : ''
+      delay: typeof options['delay'] !== 'undefined' ? options['delay'] : '',
+      updateExistingUser: typeof options['updateExistingUser'] !== 'undefined' ? options['updateExistingUser'] : false
     }));
   }).catch(function (error) {
     console.log(error);
@@ -5888,6 +5891,12 @@ var SettingContent = function SettingContent(props) {
   var handleDelay = function handleDelay(e) {
     setOptionState(_objectSpread(_objectSpread({}, optionState), {}, {
       delay: e.target.value
+    }));
+  };
+
+  var handleUpdateExistingUser = function handleUpdateExistingUser(e) {
+    setOptionState(_objectSpread(_objectSpread({}, optionState), {}, {
+      updateExistingUser: !updateExistingUser
     }));
   }; // console.log( nativeLogin );
 
@@ -6080,6 +6089,27 @@ var SettingContent = function SettingContent(props) {
           value: delay,
           onChange: handleDelay
         })
+      })
+    }, {
+      label: "Update existing user data",
+      component: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
+        className: "exlac-vm-setting-has-info",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(react_switch__WEBPACK_IMPORTED_MODULE_5__["default"], {
+          uncheckedIcon: false,
+          checkedIcon: false,
+          onColor: "#6551F2",
+          offColor: "#E2E2E2",
+          className: "exlac-vm-switch",
+          handleDiameter: 14,
+          height: 22,
+          width: 40,
+          name: "updateExistingUser",
+          checked: updateExistingUser,
+          onChange: handleUpdateExistingUser
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("span", {
+          className: "exlac-vm-setting-has-info__text",
+          children: "Update First, Last, Display & Nick Name according to Google profile."
+        })]
       })
     }]
   }]; // console.log(optionState)

@@ -10,6 +10,7 @@ use \WP_User;
 use oneTap\Base\Helper;
 
 use function oneTap\Base\Helper\onetap_clean;
+use function WPWaxCustomerSupportApp\Base\Helper\get_option;
 
 class Controller {
 
@@ -146,9 +147,20 @@ class Controller {
 	}
 
 	public function login_user($id, $payload, $redirect_uri){
+		
+		$update = Helper\get_option('updateExistingUser', false);
+
+		if( $update ) {
+			$user_data = array();
+			$user_data['ID'] = $id;
+			$user_data['first_name'] = $payload['given_name'];
+			$user_data['last_name'] = $payload['family_name'];
+			$user_data['display_name'] = $payload['name'];
+			wp_update_user($user_data);
+			update_user_meta($id, 'nickname', $payload['given_name']);
+		}
 
 		update_user_meta($id, 'onetap_profilepicture_url', esc_url_raw($payload['picture']));
-		
 		wp_clear_auth_cookie();
 		wp_set_current_user ( $id );
 		wp_set_auth_cookie ( $id, true );

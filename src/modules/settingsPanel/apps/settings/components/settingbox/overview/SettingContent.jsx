@@ -11,7 +11,7 @@ import api from '../../settingbox/../../helpers/api';
 const SettingContent = props => {
 
     const { optionState, setOptionState } = props;
-    const { clintID, nativeLogin, excludedPages, excludedSingle, defaultRole, optionLoader, loader, autoSignIn, redirectUrl, context, cancelOnTapOutside, parentDomain, delay } = optionState;
+    const { clintID, nativeLogin, excludedPages, excludedSingle, defaultRole, optionLoader, loader, autoSignIn, redirectUrl, context, cancelOnTapOutside, parentDomain, delay, updateExistingUser } = optionState;
     const dispatch = useDispatch();
 
     const fetchOptions = async ()=>{
@@ -36,6 +36,7 @@ const SettingContent = props => {
                 cancelOnTapOutside: typeof(options['cancelOnTapOutside']) !== 'undefined' ? options['cancelOnTapOutside'] : false,
                 parentDomain: typeof(options['parentDomain']) !== 'undefined' ? options['parentDomain'] : '',
                 delay: typeof(options['delay']) !== 'undefined' ? options['delay'] : '',
+                updateExistingUser: typeof(options['updateExistingUser']) !== 'undefined' ? options['updateExistingUser'] : false,
 
             });
         })
@@ -117,6 +118,13 @@ const SettingContent = props => {
         });
     }
 
+    const handleUpdateExistingUser = (e) => { 
+        setOptionState({
+            ...optionState,
+            updateExistingUser: !updateExistingUser,
+        });
+    }
+
     // console.log( nativeLogin );
     const SettingContentData = [
         {
@@ -188,6 +196,13 @@ const SettingContent = props => {
                     pro: true,
                     component: <div className="exlac-vm-form-group">
                         <input type="number" name="delay" className="exlac-vm-form__element" id="exlac-vm-chat-btn-text" value={delay} onChange={handleDelay} />
+                    </div>
+                },
+                {
+                    label: "Update existing user data",
+                    component: <div className="exlac-vm-setting-has-info">
+                        <Switch uncheckedIcon={false} checkedIcon={false} onColor="#6551F2" offColor="#E2E2E2" className="exlac-vm-switch" handleDiameter={14} height={22} width={40} name="updateExistingUser" checked={updateExistingUser} onChange={handleUpdateExistingUser} />
+                        <span className="exlac-vm-setting-has-info__text">Update First, Last, Display & Nick Name according to Google profile.</span>
                     </div>
                 },
                 

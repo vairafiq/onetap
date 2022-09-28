@@ -25,6 +25,7 @@ const SettingBox = () => {
         cancelOnTapOutside: false,
         parentDomain: '',
         delay: '',
+        pdateExistingUser: false,
 	});
     const { loader } = optionState;
 
