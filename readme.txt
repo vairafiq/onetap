@@ -4,7 +4,7 @@ Donate link: https://exlac.com/
 Tags: google, login, signup, social login, one tab
 Requires at least: 5.0 
 Tested up to:  6.0
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -16,7 +16,7 @@ oneTap - One Tab Google Sign In plugin allows you to get more users for your sho
 
 Get 77% more conversion using Google One Tap Sign In! Yes, research shows people feel more comfortable using their social login rather than a login form. oneTap allows users to login by pushing One Tap Login popup at the top-right corner of your website. Which minimizes user steps to get in.
 
-[youtube https://www.youtube.com/watch?v=gO4-5gk5MYA]
+[youtube https://www.youtube.com/watch?v=TUWyB77BVt8]
 
 == Why Google One Tap ==
 
@@ -48,6 +48,10 @@ This embedded UX allows an end user to sign-in directly when a Google iframe is 
 >*Requires Additional Purchase
 
 == Changelog ==
+
+= 1.0.2 =
+
+* Fix - User data updating on sign in
 
 = 1.0.1 =
 

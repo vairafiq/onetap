@@ -1,7 +1,7 @@
 <?php
 
 if ( ! defined( 'ONETAP_VERSION' ) ) {
-    define( 'ONETAP_VERSION', '1.0.1' );
+    define( 'ONETAP_VERSION', '1.0.2' );
 }
 
 if ( ! defined( 'ONETAP_PREFIX' ) ) {
