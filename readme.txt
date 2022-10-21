@@ -4,7 +4,7 @@ Donate link: https://exlac.com/
 Tags: google, login, signup, social login, one tab
 Requires at least: 5.0 
 Tested up to:  6.0
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -48,6 +48,10 @@ This embedded UX allows an end user to sign-in directly when a Google iframe is 
 >*Requires Additional Purchase
 
 == Changelog ==
+
+= 1.0.3 =
+
+* Fix - Style issue with RTL
 
 = 1.0.2 =
 

@@ -11,7 +11,7 @@
  * Plugin Name:       oneTap - Easy Google Sign In Prompt
  * Plugin URI:        https://wordpress.org/plugins/onetap/
  * Description:       Smartly add Google One Tap sign in to your website and get maximus lead and siginup.
- * Version:           1.0.2
+ * Version:           1.0.3
  * Requires at least: 5.2
  * Requires PHP:      7.2
  * Author:            Exlac
