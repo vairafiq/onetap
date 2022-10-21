@@ -262,14 +262,14 @@ abstract class Enqueuer_Base {
         $has_min = ( ! empty( $args['has_min'] ) ) ? true : false;
         $has_rtl = ( ! empty( $args['has_rtl'] ) ) ? true : false;
 
-        $is_rtl = is_rtl();
+        $is_rtl  = is_rtl();
+        $src_ext = isset( $args['src_ext'] ) ? $args['src_ext'] : 'css';
+        if ( $has_rtl && $is_rtl && ( 'css' === $src_ext ) ) {
+            $file_name = "{$file_name}.rtl";
+        }
 
         if ( $has_min && $this->load_min ) {
             $file_name = "{$file_name}.min";
-        }
-
-        if ( $has_rtl && $is_rtl ) {
-            $file_name = "{$file_name}.rtl";
         }
 
         return $file_name;
